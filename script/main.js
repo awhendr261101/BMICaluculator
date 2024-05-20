@@ -1,14 +1,14 @@
 function calculateBMI() {
-    var height = +document.querySelector(".height").value;
-    var weight = +document.querySelector(".weight").value;
+    let height = +document.querySelector(".height").value;
+    let weight = +document.querySelector(".weight").value;
 
     if (isNaN(height) || isNaN(weight) || height <= 0 || weight <= 0) {
       document.querySelector(".error").innerHTML = "Please enter valid height and weight.";
       return;
     }
 
-    var bmi = weight / ((height/100) ** 2);
-    var category;
+    let bmi = weight / ((height/100) ** 2);
+    let category;
 
 
     switch(true){
